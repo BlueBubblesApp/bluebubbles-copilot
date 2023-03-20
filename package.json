@@ -1,7 +1,7 @@
 {
-  "name": "discord-user-stats",
+  "name": "bluebubbles-copilot",
   "version": "1.0.0",
-  "description": "NodeJS / Typescript tool to calculate some Discord user stats",
+  "description": "A bot for interacting with the BlueBubbles ecosystem & community.",
   "type": "module",
   "engines": {
     "node": ">= 19"
@@ -28,7 +28,7 @@
     "lint": "eslint . --ext .ts --ext .mts",
     "prettier": "prettier --config .prettierrc --write ."
   },
-  "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
+  "author": "BlueBubbles Dev Team <bluebubblesapp@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
     "@octokit/auth-app": "^4.0.9",
