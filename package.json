@@ -1,0 +1,41 @@
+{
+  "name": "discord-user-stats",
+  "version": "1.0.0",
+  "description": "NodeJS / Typescript tool to calculate some Discord user stats",
+  "type": "module",
+  "engines": {
+    "node": ">= 19"
+  },
+  "devDependencies": {
+    "@octokit/types": "^9.0.0",
+    "@types/node": "^18.15.3",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.4.0",
+    "tsutils": "^3.21.0",
+    "typescript": "^5.0.2"
+  },
+  "scripts": {
+    "start": "node build/src/main.js",
+    "clean": "rimraf coverage build tmp",
+    "prebuild": "npm run lint",
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -w -p tsconfig.json",
+    "build:release": "npm run clean && tsc -p tsconfig.release.json",
+    "lint": "eslint . --ext .ts --ext .mts",
+    "prettier": "prettier --config .prettierrc --write ."
+  },
+  "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@octokit/auth-app": "^4.0.9",
+    "@octokit/oauth-methods": "^2.0.5",
+    "@octokit/rest": "^19.0.7",
+    "discord.js": "^14.8.0",
+    "dotenv": "^16.0.3",
+    "tslib": "^2.5.0"
+  }
+}
