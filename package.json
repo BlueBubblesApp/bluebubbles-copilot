@@ -4,7 +4,7 @@
   "description": "A bot for interacting with the BlueBubbles ecosystem & community.",
   "type": "module",
   "engines": {
-    "node": ">= 19"
+    "node": "17.x"
   },
   "devDependencies": {
     "@octokit/types": "^9.0.0",
@@ -40,6 +40,6 @@
     "tslib": "^2.5.0"
   },
   "volta": {
-    "node": "19.8.1"
+    "node": "17.9.1"
   }
 }
