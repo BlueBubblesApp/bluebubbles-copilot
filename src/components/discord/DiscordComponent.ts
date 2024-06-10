@@ -97,13 +97,13 @@ export default class DiscordComponent extends BaseComponent {
         }
 
         // Load the command handlers from the handlers directory
-        const cmdHandlersPath = path.join(__dirname, 'commandHandlers');
-        const cmdHandlerFiles = fs.readdirSync(cmdHandlersPath).filter(file => file.endsWith('.js'));
-        for (const file of cmdHandlerFiles) {
-            const { default: BaseCommandHandler } = await import(`./commandHandlers/${file}`);
-            const Module = new BaseCommandHandler(this.components);
-            this.commandHandlers[Module.id] = Module;
-        }
+        // const cmdHandlersPath = path.join(__dirname, 'commandHandlers');
+        // const cmdHandlerFiles = fs.readdirSync(cmdHandlersPath).filter(file => file.endsWith('.js'));
+        // for (const file of cmdHandlerFiles) {
+        //     const { default: BaseCommandHandler } = await import(`./commandHandlers/${file}`);
+        //     const Module = new BaseCommandHandler(this.components);
+        //     this.commandHandlers[Module.id] = Module;
+        // }
 
         // Load the message event handlers from the handlers directory
         const msgHandlersPath = path.join(__dirname, 'messageHandlers');

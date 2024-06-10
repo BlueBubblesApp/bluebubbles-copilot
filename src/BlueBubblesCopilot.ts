@@ -12,7 +12,7 @@ export class BlueBubblesCopilot {
         this.componentManager = new ComponentManager();
     }
 
-    async initialize() {
+    async initialize(): Promise<void> {
         await this.componentManager.initialize();
     }
 }
