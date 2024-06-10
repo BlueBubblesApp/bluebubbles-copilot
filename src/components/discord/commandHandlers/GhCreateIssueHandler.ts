@@ -49,7 +49,6 @@ export default class GhCreateIssueHandler extends BaseCommandHandler {
     }
 
     async handle(interaction: ChatInputCommandInteraction): Promise<void> {
-        return this.log.info("HERERERER");
         const gh = this.components.getComponent('github') as GithubComponent;
         if (!gh) {
             await interaction.reply('GitHub component is not loaded! Please alert the BlueBubbles team.');
