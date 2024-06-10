@@ -9,8 +9,8 @@ const HANDLER_NAME = 'Invite Spam Detection';
 
 type InviteLinkItem = {
     message: Message<boolean>,
-    time: number,
     deleted: boolean,
+    banned: boolean,
     count: number
 }
 
@@ -57,6 +57,7 @@ export default class InviteSpamDetectionHandler extends BaseMessageHandler {
     async handleInviteSpam(message: Message<boolean>): Promise<void> {
         let deleted = false;
         let count = 0;
+        let banned = false;
 
         this.log.debug(`Invite link detected from ${message.author.username}`);
         if (this.inviteLinkCache.has(message.author.id)) {
@@ -65,7 +66,7 @@ export default class InviteSpamDetectionHandler extends BaseMessageHandler {
 
             // Take action if the user has sent multiple invite links within
             // a short period of time (30 seconds).
-            if (messageTime - prevInvite.time < 30000) {
+            if (messageTime - prevInvite.message.createdTimestamp < 30000) {
                 count = prevInvite.count + 1;
                 if (!prevInvite.deleted) {
                     await this.deleteMessage(prevInvite.message);
@@ -76,8 +77,9 @@ export default class InviteSpamDetectionHandler extends BaseMessageHandler {
 
                 if (count === 1) {
                     await this.kickUser(message);
-                } else if (count >= 2) {
+                } else if (count >= 2 && !prevInvite.banned) {
                     await this.banUser(message);
+                    banned = true;
                 }
             } else {
                 // 2+ offenses, but not within the last 30 seconds.
@@ -90,7 +92,7 @@ export default class InviteSpamDetectionHandler extends BaseMessageHandler {
             await this.warnUser(message);
         }
 
-        this.inviteLinkCache.set(message.author.id, { message, time: Date.now(), deleted, count });
+        this.inviteLinkCache.set(message.author.id, { message, deleted, count, banned });
     }
 
     async kickUser(message: Message<boolean>): Promise<void> {
