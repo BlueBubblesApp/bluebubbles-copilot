@@ -1,6 +1,6 @@
 import { ChatInputCommandInteraction } from 'discord.js';
 import GithubComponent from '../../github/GithubComponent.js';
-import { BaseHandler } from '../base/BaseHandler.js';
+import { BaseCommandHandler } from '../base/BaseCommandHandler.js';
 
 const HANDLER_ID = 'gh-create-issue';
 const HANDLER_NAME = 'GitHub Create Issue Handler';
@@ -43,12 +43,13 @@ let organization = process.env.GH_ORGANIZATION;
 if (organization == null || organization === '') organization = 'BlueBubblesApp';
 
 
-export default class GhCreateIssueHandler extends BaseHandler {
+export default class GhCreateIssueHandler extends BaseCommandHandler {
     constructor(...args: any[]) {
         super(HANDLER_ID, HANDLER_NAME, ...args)
     }
 
     async handle(interaction: ChatInputCommandInteraction): Promise<void> {
+        return this.log.info("HERERERER");
         const gh = this.components.getComponent('github') as GithubComponent;
         if (!gh) {
             await interaction.reply('GitHub component is not loaded! Please alert the BlueBubbles team.');
