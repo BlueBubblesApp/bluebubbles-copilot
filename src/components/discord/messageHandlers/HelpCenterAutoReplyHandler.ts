@@ -23,7 +23,7 @@ const replyDictionary = {
         reply: HelpCenterReplies.HOW_TO_DONATE_HELP,
     },
     bestMacos: {
-        test: new RegExp(/(?:(?:best|recommended) mac(?:os)? version)|(?:which mac(?:os)?(?: version) is best|recommended)/gi),
+        test: new RegExp(/(?:(?:best|recommended) mac(?:os)? version)|(?:which mac(?:os)?(?: version)? is(?: the)? (?:best|recommended))/gi),
         reply: HelpCenterReplies.BEST_MACOS_HELP,
     },
     whichProxy: {
