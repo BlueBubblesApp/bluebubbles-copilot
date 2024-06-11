@@ -34,6 +34,14 @@ const replyDictionary = {
         test: new RegExp(/(?:how (?:(?:do)|(?:can)) i (?:(?:port forward)|(?:(?:set ?up)|use)(?: a)? dynamic dns))/gi),
         reply: HelpCenterReplies.PORT_FORWARDING_HELP,
     },
+    whyNeedMac: {
+        test: new RegExp(/(?:(?:why|do i need)(?: a)? mac)/gi),
+        reply: HelpCenterReplies.WHY_NEED_MAC_HELP,
+    },
+    howToGetPapiFeatures: {
+        test: new RegExp(/(?:(?:how|where) (?:can|do) i (?:get|use|(?:set ?up)) (?:reactions|tapbacks|replies|edit|unsend))/gi),
+        reply: HelpCenterReplies.HOW_TO_GET_PAPI_FEATURES_HELP,
+    }
 };
 
 export default class HelpCenterAutoReplyHandler extends BaseMessageHandler {
