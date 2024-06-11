@@ -7,7 +7,7 @@ const HANDLER_NAME = 'Helpcenter Auto Reply Handler';
 
 const replyDictionary = {
     cloudflare: {
-        test: new RegExp(/(?:(?:won't)|(?:can'?t)|(?:couldn'?t)|(?:unable to)|(?:failed to) connect to cloudflare)|(?:(?:can't)|(?:couldn't)|(?:unable to)|(?:failed to) get cloudflare to work)|(?:cloudflare stopped working)/gi),
+        test: new RegExp(/(?:(?:(?:won't)|(?:can'?t)|(?:couldn'?t)|(?:unable to)|(?:failed to)) connect to cloudflare)|(?:(?:(?:can't)|(?:couldn't)|(?:unable to)|(?:failed to)) get cloudflare to work)|(?:cloudflare (?:(?:stopped)|(?:no longer)) work)/gi),
         reply: HelpCenterReplies.CLOUDFLARE_CONN_HELP,
     },
     noSuchHost: {
