@@ -35,7 +35,7 @@ If you have older hardware and still would like to install newer macOS versions,
 
     WHY_NEED_MAC_HELP: `Because Apple has not released an official API for iMessage, we need to use a Mac to act as a relay server. The server is responsible for sending and receiving messages on your behalf.
     
-    We do not have a server that can run on a Jailbroken iPhone. This is why you need a Mac to use BlueBubbles.`,
+We do not have a server that can run on a Jailbroken iPhone. This is why you need a Mac to use BlueBubbles.`,
 
     HOW_TO_GET_PAPI_FEATURES_HELP: `In order to use reactions, replies, and other complex features in BlueBubbles, you will need to set up the Private API. You can find instructions on how to set up the Private API in our help center article: [Private API - BlueBubbles Documentation](${HelpCenterLinks.private_api})`,
 }
