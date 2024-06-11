@@ -15,7 +15,7 @@ const replyDictionary = {
         reply: HelpCenterReplies.NO_SUCH_HOST_HELP,
     },
     noNotifications: {
-        test: new RegExp(/(?:(?:(?:i'?m)|app)(?: (?:is not|isn'?t))? (?:receiving|getting) (?:notifications|alerts))/gi),
+        test: new RegExp(/(?:(?:(?:i'?m)|app)(?: (?:is not|isn'?t|not))? (?:receiving|getting) (?:notifications|alerts))/gi),
         reply: HelpCenterReplies.NO_NOTIFICATIONS_HELP,
     },
     howToDonate: {
