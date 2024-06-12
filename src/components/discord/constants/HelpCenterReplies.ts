@@ -38,4 +38,16 @@ If you have older hardware and still would like to install newer macOS versions,
 We do not have a server that can run on a Jailbroken iPhone. This is why you need a Mac to use BlueBubbles.`,
 
     HOW_TO_GET_PAPI_FEATURES_HELP: `In order to use reactions, replies, and other complex features in BlueBubbles, you will need to set up the Private API. You can find instructions on how to set up the Private API in our help center article: [Private API - BlueBubbles Documentation](${HelpCenterLinks.private_api})`,
+
+    APPLE_SCRIPT_REBOOT_HELP: `If you're seeing an AppleScript error, sometimes a simple macOS reboot will fix the issues.
+AppleScript errors can be caused by a variety of "environmental" issues, including bugs in the system. Often times, rebooting your Mac will resolve these issues.
+If a reboot resolves your issues, great. If not, please reach out to us for further assistance.
+
+_We highly recommend you look into setting up the Private API to avoid AppleScript errors in the future._`,
+
+    APPLE_SCRIPT_EVENTS_HELP: `If you're seeing an Apple Events error, this means that you have not granted BlueBubbles permission to send Apple Events.
+You most likely have a popup on your Mac asking you to grant the permission. Go ahead and grant the permission, and the error should go away.
+If you are using an VNC viewer to access your mac, you may not see the popup. In this case, you will need to physically access the Mac to grant the permission.
+
+_We highly recommend you look into setting up the Private API to avoid AppleScript errors in the future._`,
 }

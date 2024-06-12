@@ -41,6 +41,14 @@ const replyDictionary = {
     howToGetPapiFeatures: {
         test: new RegExp(/(?:(?:how|where) (?:can|do) i (?:get|use|(?:set ?up)) (?:reactions|tapbacks|replies|edit|unsend))/gi),
         reply: HelpCenterReplies.HOW_TO_GET_PAPI_FEATURES_HELP,
+    },
+    appleScriptReboot: {
+        test: new RegExp(/(?:apple ?event timed? out)|(?:can't get (?:(?:buddy)|(?:participant)|(?:chat)) id)/gi),
+        reply: HelpCenterReplies.APPLE_SCRIPT_REBOOT_HELP,
+    },
+    appleScriptEvents: {
+        test: new RegExp(/not authorized to send (?:(?:apple)|(?:system)) events/gi),
+        reply: HelpCenterReplies.APPLE_SCRIPT_EVENTS_HELP,
     }
 };
 
