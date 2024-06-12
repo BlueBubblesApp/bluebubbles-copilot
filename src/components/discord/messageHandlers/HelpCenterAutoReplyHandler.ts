@@ -49,7 +49,11 @@ const replyDictionary = {
     appleScriptEvents: {
         test: new RegExp(/not authorized to send (?:(?:apple)|(?:system)) events/gi),
         reply: HelpCenterReplies.APPLE_SCRIPT_EVENTS_HELP,
-    }
+    },
+    bbOnIos: {
+        test: new RegExp(/bluebubbles work on(?: an)?(?: old)? (?:(?:ipad)|(?:iphone))/gi),
+        reply: HelpCenterReplies.BB_ON_IOS_HELP,
+    },
 };
 
 export default class HelpCenterAutoReplyHandler extends BaseMessageHandler {

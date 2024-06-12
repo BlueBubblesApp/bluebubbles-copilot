@@ -50,4 +50,9 @@ You most likely have a popup on your Mac asking you to grant the permission. Go 
 If you are using an VNC viewer to access your mac, you may not see the popup. In this case, you will need to physically access the Mac to grant the permission.
 
 _We highly recommend you look into setting up the Private API to avoid AppleScript errors in the future._`,
+
+    BB_ON_IOS_HELP: `Unfortunately, the BlueBubbles server cannot be deployed to iOS or iPadOS. It can only be deployed to a MacOS device (virtual or physical).
+
+If you do not have access to a physical Mac, you can set up a virtual one using our guides here: ${HelpCenterLinks.mac_virtualization}.
+If that is too difficult, you can also purchase an older Mac Mini to use as a dedicated BlueBubbles Server.`,
 }
