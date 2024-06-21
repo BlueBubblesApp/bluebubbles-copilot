@@ -81,6 +81,11 @@ const replyDictionary: ReplyMap = {
         reply: HelpCenterReplies.BB_ON_IOS_HELP,
         minLength: 23
     },
+    loggedOutiMessage: {
+        test: new RegExp(/(?:(?:(?:automatically)|(?:instantly)|(?:immediately)) (?:(?:sign(?:(?:s)|(?:ed)))|(?:log(?:(?:s)|(?:ged))))(?: me)? out)|(?:(?:(?:sign(?:(?:s)|(?:ed)))|(?:log(?:(?:s)|(?:ged))))(?: me)? out (?:(?:automatically)|(?:instantly)|(?:immediately)))/gi),
+        reply: HelpCenterReplies.LOGGED_OUT_IMESSAGE_HELP,
+        minLength: 15
+    }
 };
 
 export default class HelpCenterAutoReplyHandler extends BaseMessageHandler {

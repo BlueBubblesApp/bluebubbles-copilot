@@ -55,4 +55,9 @@ _We highly recommend you look into setting up the Private API to avoid AppleScri
 
 If you do not have access to a physical Mac, you can set up a virtual one using our guides here: ${HelpCenterLinks.mac_virtualization}.
 If that is too difficult, you can also purchase an older Mac Mini to use as a dedicated BlueBubbles Server.`,
+
+    LOGGED_OUT_IMESSAGE_HELP: `If you get logged out of iMessage shortly after logging in, the issue is likely due to a backend iCloud restriction for your Mac.
+You'll likely need to contat Apple to get the issue resolved.
+
+Here is a link to a Reddit post that you may find helpful: https://www.reddit.com/r/hackintosh/comments/nj8yeu/imessage_problem_instantly_logged_out/`,
 }
