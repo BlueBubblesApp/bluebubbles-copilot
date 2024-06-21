@@ -17,5 +17,6 @@ export default {
     play_store: 'https://play.google.com/store/apps/details?id=com.bluebubbles.messaging',
     microsoft_store: 'https://apps.microsoft.com/store/detail/9P3XF8KJ0LSM',
     tailscale: 'https://docs.bluebubbles.app/server/advanced/byo-proxy-service-guides/tailscale-vpn-setup',
-    docker_osx: 'https://github.com/sickcodes/Docker-OSX'
+    docker_osx: 'https://github.com/sickcodes/Docker-OSX',
+    logged_out_of_imessage: 'https://www.reddit.com/r/hackintosh/comments/nj8yeu/imessage_problem_instantly_logged_out/'
 }

@@ -86,6 +86,10 @@ export default {
                 {
                     'name': 'Docker OSX',
                     'value': 'docker_osx'
+                },
+                {
+                    'name': 'Instantly Logged Out Help',
+                    'value': 'logged_out_of_imessage'
                 }
             ]
         }

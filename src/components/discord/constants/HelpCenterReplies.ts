@@ -59,5 +59,5 @@ If that is too difficult, you can also purchase an older Mac Mini to use as a de
     LOGGED_OUT_IMESSAGE_HELP: `If you get logged out of iMessage shortly after logging in, the issue is likely due to a backend iCloud restriction for your Mac.
 You'll likely need to contat Apple to get the issue resolved.
 
-Here is a link to a Reddit post that you may find helpful: https://www.reddit.com/r/hackintosh/comments/nj8yeu/imessage_problem_instantly_logged_out/`,
+Here is a link to a Reddit post that you may find helpful: ${HelpCenterLinks.logged_out_of_imessage}`,
 }
